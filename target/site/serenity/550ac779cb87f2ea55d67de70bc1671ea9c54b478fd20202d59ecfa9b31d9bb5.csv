@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manage Cart","View Cart Detail (empty)","SUCCESS","2022-10-31T20:37:03.5844427+07:00[Asia/Jakarta]","0.0","4.56"
+"Manage Cart","Delete Product From Cart","SUCCESS","2022-10-31T20:37:08.8969155+07:00[Asia/Jakarta]","0.0","6.46"
+"Manage Cart","Add Product Quantity","SUCCESS","2022-10-31T20:37:16.0502504+07:00[Asia/Jakarta]","0.0","8.1"
+"Manage Cart","Reduce Product Quantity","SUCCESS","2022-10-31T20:37:24.8653657+07:00[Asia/Jakarta]","0.0","7.22"

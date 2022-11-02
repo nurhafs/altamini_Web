@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html">Register</a></span>
+                > <span class="truncate-60"><a
+                    href="f555b04bf91d2f06e560165b31f370845e3d26487aed42d7d857339507e77312.html">Register with username and email </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-10-2022 20:39</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Register </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a new user<br />
+I want to register<br />
+So that I can login
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Register with username and email
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I open register page<br>When I insert &lt;fullname&gt; as full name<br>And I insert &lt;email&gt; as email<br>And I insert &lt;password&gt; as password<br>And I click register<br>Then I get &lt;error&gt; error</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" 1: Register with username and email ({fullname=&quot;&quot;, email=&quot;simail@mail.com&quot;, password=&quot;mmail&quot;, error=&quot;fullname&quot;})" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" Given I open register page" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" When I insert &quot;&quot; as full name" width="1554"/>
+                <img src="2f3a26eede15e1bd3284860dd35bf679b944aaaa57068e5717124cc172e904e5.png" title=" When I insert &quot;&quot; as full name (completed)" width="1554"/>
+                <img src="2f3a26eede15e1bd3284860dd35bf679b944aaaa57068e5717124cc172e904e5.png" title=" And I insert &quot;simail@mail.com&quot; as email" width="1554"/>
+                <img src="3e1afca95399dfc5d87d0bcf65aa16a5ffa5edf4079cd31341b6bfa27a0bb857.png" title=" And I insert &quot;simail@mail.com&quot; as email (completed)" width="1554"/>
+                <img src="3e1afca95399dfc5d87d0bcf65aa16a5ffa5edf4079cd31341b6bfa27a0bb857.png" title=" And I insert &quot;mmail&quot; as password" width="1554"/>
+                <img src="780241224497572e572838d3cf3b128b69a261b4bb6e2339c35b2da097a6303a.png" title=" And I insert &quot;mmail&quot; as password (completed)" width="1554"/>
+                <img src="780241224497572e572838d3cf3b128b69a261b4bb6e2339c35b2da097a6303a.png" title=" And I click register" width="1554"/>
+                <img src="673a6c6efb5d07048aa3a137179be2baebc302e68e0873e0766247c2adf9f186.png" title=" And I click register (completed)" width="1554"/>
+                <img src="673a6c6efb5d07048aa3a137179be2baebc302e68e0873e0766247c2adf9f186.png" title=" Then I get &quot;fullname&quot; error" width="1554"/>
+                <img src="732981458cb83fe2ae92e48ec7850d8e5520918d1bb6e9a40f7588d723304149.png" title=" Then I get &quot;fullname&quot; error (completed)" width="1554"/>
+                <img src="732981458cb83fe2ae92e48ec7850d8e5520918d1bb6e9a40f7588d723304149.png" title=" 1: Register with username and email ({fullname=&quot;&quot;, email=&quot;simail@mail.com&quot;, password=&quot;mmail&quot;, error=&quot;fullname&quot;}) (completed)" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" 2: Register with username and email ({fullname=&quot;Sisimail&quot;, email=&quot;&quot;, password=&quot;mmail&quot;, error=&quot;email&quot;})" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" Given I open register page" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" When I insert &quot;Sisimail&quot; as full name" width="1554"/>
+                <img src="1319dc2b5d452eb677b22a990d3067344df1d822fc8d64ea1ac99921b0735bd4.png" title=" When I insert &quot;Sisimail&quot; as full name (completed)" width="1554"/>
+                <img src="1319dc2b5d452eb677b22a990d3067344df1d822fc8d64ea1ac99921b0735bd4.png" title=" And I insert &quot;&quot; as email" width="1554"/>
+                <img src="bc4812c08b94d20addb32ba738f1c3425c227d172c5345f5c629e91dc3d3bd8a.png" title=" And I insert &quot;&quot; as email (completed)" width="1554"/>
+                <img src="bc4812c08b94d20addb32ba738f1c3425c227d172c5345f5c629e91dc3d3bd8a.png" title=" And I insert &quot;mmail&quot; as password" width="1554"/>
+                <img src="3ad1b15461c27a72712cbca2369dceebfbfce5c91aefa619e85e1eb1a7b9552f.png" title=" And I insert &quot;mmail&quot; as password (completed)" width="1554"/>
+                <img src="3ad1b15461c27a72712cbca2369dceebfbfce5c91aefa619e85e1eb1a7b9552f.png" title=" And I click register" width="1554"/>
+                <img src="d29145d944d38681ad58c5425a17394d9002d334d16ac8413d336d350cac6507.png" title=" And I click register (completed)" width="1554"/>
+                <img src="d29145d944d38681ad58c5425a17394d9002d334d16ac8413d336d350cac6507.png" title=" Then I get &quot;email&quot; error" width="1554"/>
+                <img src="cb971e31cb00feab2e4e21b4c1652f5d55ac02c5f246fc21fcba4d5097565402.png" title=" Then I get &quot;email&quot; error (completed)" width="1554"/>
+                <img src="cb971e31cb00feab2e4e21b4c1652f5d55ac02c5f246fc21fcba4d5097565402.png" title=" 2: Register with username and email ({fullname=&quot;Sisimail&quot;, email=&quot;&quot;, password=&quot;mmail&quot;, error=&quot;email&quot;}) (completed)" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" 3: Register with username and email ({fullname=&quot;Sisimail&quot;, email=&quot;simail@mail.com&quot;, password=&quot;&quot;, error=&quot;password&quot;})" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" Given I open register page" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" When I insert &quot;Sisimail&quot; as full name" width="1554"/>
+                <img src="02e2f10fa4be748427192f411f9bcf40143be9b73c93b7ad24f89c67faf4db63.png" title=" When I insert &quot;Sisimail&quot; as full name (completed)" width="1554"/>
+                <img src="02e2f10fa4be748427192f411f9bcf40143be9b73c93b7ad24f89c67faf4db63.png" title=" And I insert &quot;simail@mail.com&quot; as email" width="1554"/>
+                <img src="477bb1109d651c02627697f5ed8071671adeb32723e2568cf25a8d5c20b15b43.png" title=" And I insert &quot;simail@mail.com&quot; as email (completed)" width="1554"/>
+                <img src="477bb1109d651c02627697f5ed8071671adeb32723e2568cf25a8d5c20b15b43.png" title=" And I insert &quot;&quot; as password" width="1554"/>
+                <img src="2ee82316f2c2e3aee96520a9fce661dc437e03397360a0314454f093c4e8f59f.png" title=" And I insert &quot;&quot; as password (completed)" width="1554"/>
+                <img src="2ee82316f2c2e3aee96520a9fce661dc437e03397360a0314454f093c4e8f59f.png" title=" And I click register" width="1554"/>
+                <img src="806ec75b8b7ab4f4a6223993700b834c8d6fcc059ce1c4b5e78bd888597f3d84.png" title=" And I click register (completed)" width="1554"/>
+                <img src="806ec75b8b7ab4f4a6223993700b834c8d6fcc059ce1c4b5e78bd888597f3d84.png" title=" Then I get &quot;password&quot; error" width="1554"/>
+                <img src="7ca7f9e5e4f8bc34e1ed1d6e673679822aedb5d7c88821fffae53a8c22d19263.png" title=" Then I get &quot;password&quot; error (completed)" width="1554"/>
+                <img src="7ca7f9e5e4f8bc34e1ed1d6e673679822aedb5d7c88821fffae53a8c22d19263.png" title=" 3: Register with username and email ({fullname=&quot;Sisimail&quot;, email=&quot;simail@mail.com&quot;, password=&quot;&quot;, error=&quot;password&quot;}) (completed)" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" 4: Register with username and email ({fullname=&quot;&quot;, email=&quot;&quot;, password=&quot;&quot;, error=&quot;empty form&quot;})" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" Given I open register page" width="1554"/>
+                <img src="74af2a90e11b4e8cdcc90c8b8f2efe0850d173caaf4338fdd4e69cc971e1b305.png" title=" When I insert &quot;&quot; as full name" width="1554"/>
+                <img src="1a00f74fcaed56a8430df39c7893a2000b35f810c4053facca58ce149e98aac6.png" title=" When I insert &quot;&quot; as full name (completed)" width="1554"/>
+                <img src="1a00f74fcaed56a8430df39c7893a2000b35f810c4053facca58ce149e98aac6.png" title=" And I insert &quot;&quot; as email" width="1554"/>
+                <img src="695fbc2b7a58a99750c3996528e7dd50d47c2f2131b3b43adb1432f7a709256e.png" title=" And I insert &quot;&quot; as email (completed)" width="1554"/>
+                <img src="695fbc2b7a58a99750c3996528e7dd50d47c2f2131b3b43adb1432f7a709256e.png" title=" And I insert &quot;&quot; as password" width="1554"/>
+                <img src="5f96f10b4893513bac9f2b9eaddb305b5ce3289ef6bf6fb7fa6f32b4579601d4.png" title=" And I insert &quot;&quot; as password (completed)" width="1554"/>
+                <img src="5f96f10b4893513bac9f2b9eaddb305b5ce3289ef6bf6fb7fa6f32b4579601d4.png" title=" And I click register" width="1554"/>
+                <img src="ca2eb6cd0981f4037dbbb05c3e6ad9e362f3297534ef48b973db4b6b37f261a5.png" title=" And I click register (completed)" width="1554"/>
+                <img src="ca2eb6cd0981f4037dbbb05c3e6ad9e362f3297534ef48b973db4b6b37f261a5.png" title=" Then I get &quot;empty form&quot; error" width="1554"/>
+                <img src="498637acdb6b1b9e517b93a8944573c7b3b39de511e01880cf6a21ca4bc1ef18.png" title=" Then I get &quot;empty form&quot; error (completed)" width="1554"/>
+                <img src="498637acdb6b1b9e517b93a8944573c7b3b39de511e01880cf6a21ca4bc1ef18.png" title=" 4: Register with username and email ({fullname=&quot;&quot;, email=&quot;&quot;, password=&quot;&quot;, error=&quot;empty form&quot;}) (completed): <span class='success-color'>SUCCESS</span>" width="1554"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>
