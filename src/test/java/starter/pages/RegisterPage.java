@@ -32,6 +32,10 @@ public class RegisterPage extends PageObject {
         return By.xpath("//div/i");
     }
 
+    private By fullnameRequired() { return By.xpath("//div[text()=' fullname is required ']"); }
+    private By emailRequired() { return By.xpath("//div[text()=' email is required ']"); }
+    private By passwordRequired() { return By.xpath("//div[text()=' password is required ']"); }
+
     public void openUrl() {
         openAt("/auth/register");
     }
@@ -65,8 +69,16 @@ public class RegisterPage extends PageObject {
         $(warningIcon()).isDisplayed();
     }
 
+    public void fullnameError() {
+        $(fullnameRequired()).isDisplayed();
+    }
 
+    public void emailError() {
+        $(emailRequired()).isDisplayed();
+    }
 
-
+    public void passwordError() {
+        $(passwordRequired()).isDisplayed();
+    }
 
 }

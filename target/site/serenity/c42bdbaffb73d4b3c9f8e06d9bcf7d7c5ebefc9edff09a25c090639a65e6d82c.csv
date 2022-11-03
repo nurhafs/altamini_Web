@@ -1,3 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Manage Cart","View Cart Detail (filled)","SUCCESS","2022-10-31T20:36:47.3112784+07:00[Asia/Jakarta]","0.0","15.38"
-"Logout","Logout","SUCCESS","2022-10-31T20:38:15.3906109+07:00[Asia/Jakarta]","0.0","10.16"
+"Manage Cart","View Cart Detail (filled)","SUCCESS","2022-11-03T21:11:40.7529846+07:00[Asia/Jakarta]","0.0","18.34"
+"Login","Login with email and password","SUCCESS","2022-11-03T21:12:42.9447315+07:00[Asia/Jakarta]","0.0","58.15"
+"Register","Register with username and email","SUCCESS","2022-11-03T21:14:37.1601391+07:00[Asia/Jakarta]","0.0","36.95"
+"Transaction","Pay Products as logged in user","SUCCESS","2022-11-03T21:15:14.115674+07:00[Asia/Jakarta]","0.0","10.19"

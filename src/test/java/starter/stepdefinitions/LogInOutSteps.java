@@ -45,8 +45,11 @@ public class LogInOutSteps {
     public void iGetResult(String res) {
         if (res.equals("logged in")) {
             logInOutPages.loggedIn();
-        }
-        else {
+        } else if (res.equals("email error")) {
+            logInOutPages.emailError();
+        } else if (res.equals("password error")) {
+            logInOutPages.passwordError();
+        } else {
             logInOutPages.getError();
         }
     }
@@ -73,5 +76,11 @@ public class LogInOutSteps {
     @Then("I am back to login page")
     public void iAmBackToLoginPage() {
         logInOutPages.loginPageDisplayed();
+    }
+
+    @And("I click login button again")
+    public void iClickLoginButtonAgain() {
+        logInOutPages.getError();
+        logInOutPages.clickLoginBtn();
     }
 }

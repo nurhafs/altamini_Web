@@ -1,3 +1,4 @@
+@Register
 Feature: Register
   As a new user
   I want to register
@@ -29,6 +30,7 @@ Feature: Register
     And I insert <email> as email
     And I insert <password> as password
     And I click register
+    And I click register again
     Then I get <error> error
 
     Examples:

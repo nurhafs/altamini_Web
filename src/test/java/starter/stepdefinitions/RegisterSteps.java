@@ -13,11 +13,6 @@ public class RegisterSteps {
     @Steps
     RegisterPage registerPage;
 
-//    @Given("I open register page")
-//    public void i_open_register_page() {
-//        registerPage.openUrl();
-//    }
-
     @When("I open register page")
     public void iOpenRegisterPage() {
         registerPage.openUrl();
@@ -27,11 +22,7 @@ public class RegisterSteps {
     public void iInputFullName() {
         registerPage.inputFullName("Yaaa");
     }
-//
-//    @And("I input new email")
-//    public void iInputNewEmail() {
-//    }
-//
+
     @And("I input password")
     public void iInputPassword() {
         registerPage.inputPassword("thaurn");
@@ -75,7 +66,16 @@ public class RegisterSteps {
 
     @Then("I get {string} error")
     public void iGetErrorError(String error) {
-        registerPage.getError();
+        if (error.equals("fullname")) {
+            registerPage.fullnameError();
+        } else if (error.equals("email")) {
+            registerPage.emailError();
+        } else if (error.equals("password")) {
+            registerPage.passwordError();
+        } else {
+            registerPage.getError();
+        }
+
     }
 
     @Then("I will go to register page")
@@ -93,5 +93,11 @@ public class RegisterSteps {
     @Then("I am redirected to login page")
     public void iAmRedirectedToLoginPage() {
         registerPage.loginPageDIsplayed();
+    }
+
+    @And("I click register again")
+    public void iClickRegisterAgain() {
+        registerPage.getError();
+        registerPage.clickRegisterBtn();
     }
 }

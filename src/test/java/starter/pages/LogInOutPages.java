@@ -23,6 +23,8 @@ public class LogInOutPages extends PageObject {
     private By warningIcon() {
         return By.xpath("//div/i");
     }
+    private By emailRequired() { return By.xpath("//div[text()=' email is required ']"); }
+    private By passwordRequired() { return By.xpath("//div[text()=' password is required ']"); }
 
     private By logoutBtn() { return By.xpath("//div[text()=' Logout ']"); }
 
@@ -60,6 +62,14 @@ public class LogInOutPages extends PageObject {
 
     public void clickLogoutBtn() {
         $(logoutBtn()).click();
+    }
+
+    public void emailError() {
+        $(emailRequired()).isDisplayed();
+    }
+
+    public void passwordError() {
+        $(passwordRequired()).isDisplayed();
     }
 
 }
