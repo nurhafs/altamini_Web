@@ -26,6 +26,7 @@ public class LogInOutPages extends PageObject {
     private By emailRequired() { return By.xpath("//div[text()=' email is required ']"); }
     private By passwordRequired() { return By.xpath("//div[text()=' password is required ']"); }
 
+    private By recordNotFound() { return By.xpath("//div/div[text()=' record not found ']"); }
     private By logoutBtn() { return By.xpath("//div[text()=' Logout ']"); }
 
 
@@ -71,5 +72,7 @@ public class LogInOutPages extends PageObject {
     public void passwordError() {
         $(passwordRequired()).isDisplayed();
     }
+
+    public void recordNotFoundError() { $(recordNotFound()).isDisplayed(); }
 
 }

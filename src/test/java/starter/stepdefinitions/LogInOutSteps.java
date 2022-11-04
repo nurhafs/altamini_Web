@@ -49,7 +49,9 @@ public class LogInOutSteps {
             logInOutPages.emailError();
         } else if (res.equals("password error")) {
             logInOutPages.passwordError();
-        } else {
+        } else if (res.equals("record not found error")) {
+            logInOutPages.recordNotFoundError();
+        } else { //error
             logInOutPages.getError();
         }
     }

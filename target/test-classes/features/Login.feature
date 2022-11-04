@@ -27,5 +27,5 @@ Feature: Login
     | "thaur@mail.com" | "pinto" | "error" |
     | "user@mail.com"  | ""  | "password error"     |
     | "" | "nxxxae" | "email error" |
-    | "naevis@mail.com" | "pass" | "error" |
+    | "naevis@mail.com" | "pass" | "record not found error" |
     | "" | "" | "email error" |

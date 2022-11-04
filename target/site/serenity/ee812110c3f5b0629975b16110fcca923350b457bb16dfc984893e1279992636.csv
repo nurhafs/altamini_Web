@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Transaction","Pay Products as logged in user","SUCCESS","2022-11-03T21:15:14.115674+07:00[Asia/Jakarta]","0.0","10.19"
-"Transaction","Pay Products as anon user","SUCCESS","2022-11-03T21:15:25.0157578+07:00[Asia/Jakarta]","0.0","0.03"
-"Transaction","View Transaction List","SUCCESS","2022-11-03T21:15:25.0516628+07:00[Asia/Jakarta]","0.0","4.99"
+"Transaction","Pay Products as logged in user","SUCCESS","2022-11-04T21:27:46.2918306+07:00[Asia/Jakarta]","0.0","7.97"
+"Transaction","Pay Products as anon user","SUCCESS","2022-11-04T21:27:54.9521474+07:00[Asia/Jakarta]","0.0","0.03"
+"Transaction","View Transaction List","SUCCESS","2022-11-04T21:27:54.990046+07:00[Asia/Jakarta]","0.0","4.92"

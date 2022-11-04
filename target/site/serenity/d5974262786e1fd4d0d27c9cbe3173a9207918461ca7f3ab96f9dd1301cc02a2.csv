@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login","Show Login Page","SUCCESS","2022-11-03T21:12:32.2975911+07:00[Asia/Jakarta]","0.0","3.46"
-"Login","Login with registered email and password","SUCCESS","2022-11-03T21:12:36.4293892+07:00[Asia/Jakarta]","0.0","5.78"
-"Login","Login with email and password","SUCCESS","2022-11-03T21:12:42.9447315+07:00[Asia/Jakarta]","0.0","58.15"
+"Login","Show Login Page","SUCCESS","2022-11-04T21:25:47.3782148+07:00[Asia/Jakarta]","0.0","3.96"
+"Login","Login with registered email and password","SUCCESS","2022-11-04T21:25:51.9935791+07:00[Asia/Jakarta]","0.0","6.87"
+"Login","Login with email and password","SUCCESS","2022-11-04T21:25:59.5850917+07:00[Asia/Jakarta]","0.0","32.74"
