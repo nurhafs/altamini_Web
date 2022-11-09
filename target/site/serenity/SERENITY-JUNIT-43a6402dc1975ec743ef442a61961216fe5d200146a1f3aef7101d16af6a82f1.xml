@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Transaction" skipped="0" tests="3" time="12.92" timestamp="2022-11-04 09:27:46"><testcase name="Pay Products as logged in user"/><testcase name="Pay Products as anon user"/><testcase name="View Transaction List"/></testsuite>

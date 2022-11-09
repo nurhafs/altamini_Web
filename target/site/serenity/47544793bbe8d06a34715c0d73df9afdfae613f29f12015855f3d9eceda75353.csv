@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Manage Cart","View Cart Detail (filled)","SUCCESS","2022-11-04T21:24:54.2540797+07:00[Asia/Jakarta]","0.0","20.57"
+"Manage Cart","Delete Product From Cart","SUCCESS","2022-11-09T19:29:33.6242202+07:00[Asia/Jakarta]","0.0","19.02"
+"Manage Cart","Add Product Quantity","SUCCESS","2022-11-09T19:29:53.5903777+07:00[Asia/Jakarta]","0.0","19.44"
+"Manage Cart","Reduce Product Quantity","SUCCESS","2022-11-09T19:30:13.9361847+07:00[Asia/Jakarta]","0.0","20.17"

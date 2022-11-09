@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Register" skipped="0" tests="7" time="39.65" timestamp="2022-11-04 09:27:04"><testcase name="Open Register Page"/><testcase name="Register with new email"/><testcase name="Register with registered email"/><testcase name="Register with username and email"/></testsuite>

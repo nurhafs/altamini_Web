@@ -3,6 +3,8 @@ package starter.pages;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class CartPages extends PageObject {
 
     private By emptyNotification() { return By.xpath("//div/div[text()=' Order is empty! ']"); }
@@ -53,7 +55,7 @@ public class CartPages extends PageObject {
     }
 
     public void checkQtyPanel(String qty) {
-        $(quantityPanel()).getText();
+        assertThat(($(quantityPanel()).getText()).equals(qty));
     }
 
     public void clickBuyBtn() {

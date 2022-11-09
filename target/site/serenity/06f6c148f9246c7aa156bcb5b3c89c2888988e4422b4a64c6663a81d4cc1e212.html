@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Manage Product","type":"feature","href":"06f6c148f9246c7aa156bcb5b3c89c2888988e4422b4a64c6663a81d4cc1e212.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e4 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -215,7 +215,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-11-2022 21:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -271,273 +271,13 @@ So that I can browse and buy them
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
-                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <!--- TOC --->
-                                                <div id="toc">
-                                                    <h3>Overview</h3>
-                                                    <table class="table" id="toc-table">
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#c1e547a307ad9e123a2eba1e20ee224d2647d140c88a4f8c5a1aac75174afb2d"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Show Product List
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
+                                                <h3>Requirements Overview</h3>
 
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="9232bbe0fdfda0b7ae698a3b518c7fa29ea9015120ca60520f010fecd2e13d0a.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
+                                                <div id="tree"></div>
 
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="9232bbe0fdfda0b7ae698a3b518c7fa29ea9015120ca60520f010fecd2e13d0a.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#f9309f314e4ccc471713312dd7c36688d907f2d8b9ac5d0288f4df05134da889"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Select Category
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="aa00887094b2debacc0b9dee15fe64fe93a795bac4571bc64277f60aa1ba2cc3.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="aa00887094b2debacc0b9dee15fe64fe93a795bac4571bc64277f60aa1ba2cc3.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#3c94c5ef1a5266cec996d42427ec8a0e3b62ed15f796606e0f27db8034ec40b6"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: View Product Detail
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="2eb617ce6e9ffbb62faa5aa5dd1b8d0d209b90d38002110e1f3070de108fc6a4.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="2eb617ce6e9ffbb62faa5aa5dd1b8d0d209b90d38002110e1f3070de108fc6a4.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="width:95%;" class="toc-title">
-                                                                            <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#e53268e33d4c1d19a8437a68c4529300fc5a2b802ca7baf970d35e3d8849aa7e"
-                                                                                       title="View scenario details">
-                                                                                        <i class="bi bi-chat-dots"></i> Scenario: Add Product to Cart
-                                                                                    </a>
-                                                                                </span>
-                                                                        </td>
-                                                                        <td>
-
-                                                                        </td>
-                                                                        <td style="width:5%;">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="icons-bar">
-                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                           href="1a5f6d6c74109b3d4e8e2fdf1806505b66d44afd880410076637225971a00b76.html"
-                                                                                           title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                                            </a>
-
-
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="1a5f6d6c74109b3d4e8e2fdf1806505b66d44afd880410076637225971a00b76.html"
-                                                                                               title="View test results">
-                                                                                                <i class="bi bi-eyeglasses"></i>
-                                                                                            </a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                    </table>
-                                                </div>
-                                                <!--- END OF TOC --->
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                    <h3>Scenarios</h3>
-
-                                                        <a name="ca3e6ae1-0382-4de3-9e4f-b94f9e5d16e1"></a>
-                                                        <p class="rule-tags inline-tag">
-                                                        </p>
-
-
-                                                            <div class="scenario-docs card" id="c1e547a307ad9e123a2eba1e20ee224d2647d140c88a4f8c5a1aac75174afb2d">
-                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="9232bbe0fdfda0b7ae698a3b518c7fa29ea9015120ca60520f010fecd2e13d0a.html"
-                                                                               title="View test results">Scenario: Show Product List</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>When I open product url</p>
-                                                                        <p>Then I get product list</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="f9309f314e4ccc471713312dd7c36688d907f2d8b9ac5d0288f4df05134da889">
-                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="aa00887094b2debacc0b9dee15fe64fe93a795bac4571bc64277f60aa1ba2cc3.html"
-                                                                               title="View test results">Scenario: Select Category</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I open mainpage url</p>
-                                                                        <p>When I click select category</p>
-                                                                        <p>And I click one of the category</p>
-                                                                        <p>Then I can see products based on chosen category</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="3c94c5ef1a5266cec996d42427ec8a0e3b62ed15f796606e0f27db8034ec40b6">
-                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="2eb617ce6e9ffbb62faa5aa5dd1b8d0d209b90d38002110e1f3070de108fc6a4.html"
-                                                                               title="View test results">Scenario: View Product Detail</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I open product url</p>
-                                                                        <p>When I click detail on one of the products</p>
-                                                                        <p>Then I get the product details</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="e53268e33d4c1d19a8437a68c4529300fc5a2b802ca7baf970d35e3d8849aa7e">
-                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                                    <div>
-                                                                        <span class="scenario-heading">
-                                                                            <a href="1a5f6d6c74109b3d4e8e2fdf1806505b66d44afd880410076637225971a00b76.html"
-                                                                               title="View test results">Scenario: Add Product to Cart</a>
-                                                                        </span>
-
-                                                                        <span class="example-tags inline-tag">
-                                                                        </span>
-
-                                                                        <span class="scenario-result-icon">
-                                                                    
-
-                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I open mainpage url</p>
-                                                                        <p>When I click beli in one product</p>
-                                                                        <p>Then Product added to cart</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -549,9 +289,6 @@ So that I can browse and buy them
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
-                                                    <div class="chart-container" style="position: relative; width:30vw">
-                                                        <canvas id="resultChart" width="300" height="300"></canvas>
-                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -576,68 +313,7 @@ So that I can browse and buy them
                                             <div class="col-sm-12">
                                                 <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                    <table class="scenario-result-table table"
-                                                           id="scenario-results">
-                                                        <thead>
-                                                        <tr>
-                                                            <th class="test-name-column">Scenario</th>
-                                                            <th>Steps</th>
-                                                            <th>Started</th>
-                                                            <th>Duration</th>
-                                                            <th>Result</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="9232bbe0fdfda0b7ae698a3b518c7fa29ea9015120ca60520f010fecd2e13d0a.html">Show Product List</a>
-                                                                </td>
-                                                                <td>2</td>
-                                                                <td>21:26:37</td>
-                                                                <td>6s 499ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="aa00887094b2debacc0b9dee15fe64fe93a795bac4571bc64277f60aa1ba2cc3.html">Select Category</a>
-                                                                </td>
-                                                                <td>4</td>
-                                                                <td>21:26:44</td>
-                                                                <td>3s 520ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="2eb617ce6e9ffbb62faa5aa5dd1b8d0d209b90d38002110e1f3070de108fc6a4.html">View Product Detail</a>
-                                                                </td>
-                                                                <td>3</td>
-                                                                <td>21:26:49</td>
-                                                                <td>7s 033ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                            <tr class="scenario-result SUCCESS">
-                                                                <td>
-                                                                        <a href="1a5f6d6c74109b3d4e8e2fdf1806505b66d44afd880410076637225971a00b76.html">Add Product to Cart</a>
-                                                                </td>
-                                                                <td>3</td>
-                                                                <td>21:26:56</td>
-                                                                <td>7s 119ms</td>
-                                                                <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
-                                                                                                                                    </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    No automated tests were executed
 
                                             </div>
                                         </div>
@@ -691,7 +367,7 @@ So that I can browse and buy them
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -742,7 +418,7 @@ So that I can browse and buy them
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -786,7 +462,7 @@ So that I can browse and buy them
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 4}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -837,7 +513,7 @@ So that I can browse and buy them
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = " "
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -882,7 +558,7 @@ So that I can browse and buy them
             datasets: [
                 {
                     label: 'Automated',
-                    data: [4,0,0,0,0,0,0,0],
+                    data: [0,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -965,7 +641,7 @@ So that I can browse and buy them
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','4','0','0','0','0','0','0'],
+                data: ['0','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

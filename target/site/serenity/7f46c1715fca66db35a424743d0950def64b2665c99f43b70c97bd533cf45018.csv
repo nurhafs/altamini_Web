@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Register","Open Register Page","SUCCESS","2022-11-04T21:27:04.6969058+07:00[Asia/Jakarta]","0.0","3.46"
-"Register","Register with new email","SUCCESS","2022-11-04T21:27:08.7967184+07:00[Asia/Jakarta]","0.0","5.52"
-"Register","Register with registered email","SUCCESS","2022-11-04T21:27:14.9734213+07:00[Asia/Jakarta]","0.0","5.71"
-"Register","Register with username and email","SUCCESS","2022-11-04T21:27:21.3137873+07:00[Asia/Jakarta]","0.0","24.96"
